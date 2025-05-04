@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-interface IProductItemProps {
+export interface IProductItemProps {
   id: string;
   image: string;
   title: string;
