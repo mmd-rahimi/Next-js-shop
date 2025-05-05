@@ -2,6 +2,7 @@ import CartItem from "@/components/CartItem";
 import Container from "@/components/Container";
 
 function Cart() {
+  
   return (
     <Container>
       <div className="">

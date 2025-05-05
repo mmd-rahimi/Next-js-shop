@@ -1,6 +1,5 @@
 "use client"
 import { UseCartContext } from "@/contexts/CartContext";
-import React, { useContext } from "react";
 
 interface IAddToCartProps {
 id: string
@@ -8,7 +7,7 @@ id: string
 
 function AddToCart({id}: IAddToCartProps) {
 
-   const {cartItems, handleIncreaseProductQty} = UseCartContext()
+   const {cartItems, handleIncreaseProductQty, getProductQty} = UseCartContext()
 
    console.log(cartItems);
    
@@ -18,7 +17,7 @@ function AddToCart({id}: IAddToCartProps) {
         <button onClick={() => handleIncreaseProductQty(parseInt(id))} className="text-lg font-bold w-11 h-11 mx-auto rounded-xl bg-sky-300 cursor-pointer">
           +
         </button>
-        <span className="mx-4 text-2xl font-semibold">1</span>
+        <span className="mx-4 text-2xl font-semibold">{getProductQty(parseInt(id))}</span>
         <button className="text-lg font-bold w-11 h-11 mx-auto rounded-xl bg-sky-300 cursor-pointer">
           -
         </button>
