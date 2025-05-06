@@ -1,16 +1,18 @@
+"use client";
 import CartItem from "@/components/CartItem";
 import Container from "@/components/Container";
+import { UseCartContext } from "@/contexts/CartContext";
 
 function Cart() {
-  
+  const { cartItems } = UseCartContext();
+
   return (
     <Container>
       <div className="">
-        <CartItem />
-        <CartItem />
-        <CartItem />
+        {cartItems.map((item) => {
+          <CartItem key={item.id}/>;
+        })}
       </div>
-
       <div className="border shadow-md">
         <h2>
           قیمت کل: <span>100</span> تومان

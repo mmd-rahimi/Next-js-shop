@@ -7,49 +7,6 @@ async function Store() {
   const result = await fetch("http://localhost:8000/products")
   const data = await result.json() as IProductItemProps[]
 
-  // const data = [
-  //   {
-  //     id: "1",
-  //     image:
-  //       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlrZqTCInyg6RfYC7Ape20o-EWP1EN_A8fOA&s",
-  //     title: "محصول 1",
-  //     description: "سثبهبهت هتثزتیرتثرتحثضتضشصختیت",
-  //     price: 10,
-  //   },
-  //   {
-  //     id: "2",
-  //     image:
-  //       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCeVhPcF0B061dWx6Y2p6ZshztnAoVQI59g&s",
-  //     title: "محصول 2",
-  //     description: "سثبهبهت هتثزتیرتثرتحثضتضشصختیت",
-  //     price: 20,
-  //   },
-  //   {
-  //     id: "3",
-  //     image:
-  //       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRcaYv7qg0hxUBeEjRTE-orhFk3WXlC4o7ZQ&s",
-  //     title: "محصول 3",
-  //     description: "سثبهبهت هتثزتیرتثرتحثضتضشصختیت",
-  //     price: 30,
-  //   },
-  //   {
-  //     id: "4",
-  //     image:
-  //       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s",
-  //     title: "محصول 4",
-  //     description: "سثبهبهت هتثزتیرتثرتحثضتضشصختیت",
-  //     price: 40,
-  //   },
-  //   {
-  //     id: "5",
-  //     image:
-  //       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjIj3bRVuJhWCVW1jD30AjoO2eZ6-uRQNOIg&s",
-  //     title: "محصول 5",
-  //     description: "سثبهبهت هتثزتیرتثرتحثضتضشصختیت",
-  //     price: 50,
-  //   },
-  // ];
-
   return (
     <Container>
       <div className="grid grid-cols-4 gap-4">
