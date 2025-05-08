@@ -10,9 +10,13 @@ function Cart() {
     <Container>
       <div className="">
         {cartItems.map((item) => {
-          <CartItem key={item.id}/>;
+         return <CartItem key={item.id} {...CartItem}/>;
         })}
       </div>
+
+    </Container>
+
+      /* </div>
       <div className="border shadow-md">
         <h2>
           قیمت کل: <span>100</span> تومان
@@ -28,9 +32,7 @@ function Cart() {
           <button className="bg-sky-500 text-white px-5 py-2 rounded">
             اعمال کد تخفیف
           </button>
-        </div>
-      </div>
-    </Container>
+        </div> */
   );
 }
 
